@@ -124,11 +124,11 @@ string binarySubtraction(string a, string b) {
 int main() {
     string binary1, binary2;
 
-    cout << "Enter first binary number: ";
+    cout << "Day nhi phan 1: ";
     cin >> binary1;
-    cout << "Enter second binary number: ";
+    cout << "Day nhi phan 2: ";
     cin >> binary2;
-    cout << "Product: " << binaryMultiplication(binary1, binary2) << endl;
+    cout << "ket qua: " << binaryMultiplication(binary1, binary2) << endl;
     system("pause");
     return 0;
 }
