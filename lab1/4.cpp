@@ -50,11 +50,19 @@ string soNhiPhan(long long n)
 
 int main()
 {
+
     cout << soNhiPhan(-32768) << endl; // int 16
     cout << soNhiPhan(32767) << endl; 
     cout << soNhiPhan(INT_MAX) << endl; // int 32
     cout << soNhiPhan(INT_MIN) << endl;
     cout << soNhiPhan(INT64_MIN) << endl; // int 64   
     cout << soNhiPhan(INT64_MAX) << endl;
+    cout << "----------------------------------------------------" << endl;
+    cout << (-32768) << endl; // int 16
+    cout << (32767) << endl; 
+    cout << (INT_MAX) << endl; // int 32
+    cout << (INT_MIN) << endl;
+    cout << (INT64_MIN) << endl; // int 64   
+    cout << (INT64_MAX) << endl;
     system("pause");
 }
