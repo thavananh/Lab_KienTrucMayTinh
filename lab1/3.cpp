@@ -24,32 +24,32 @@ string nhanHaiSoNhiPhan(string b1, string b2)
     {
         if (b2[i] == '0')
         {
-            rs = to_string('0') + rs;
-            for (int i = 1; i < rs.length() - count; i++)
+            rs = "0" + rs;
+            for (int j = 1; j < rs.length() - count; j++)
             {
-                rs[i] = '1';
+                rs[j] = '1';
             }
         }
         else
         {
-            rs = b1[i] + rs;
-            for (int i = 1; i < rs.length() - count; i++)
+            rs = b1[0] + rs;
+            for (int k = 1; k < rs.length() - count; k++)
             {
-                if (rs[i] == '0' && b1[i] == '1')
+                if (rs[k] == '0' && b1[k] == '1')
                 {
-                    rs[i] = '1';
+                    rs[k] = '1';
                 }
-                else if (rs[i] == '1' && b1[i] == '1')
+                else if (rs[k] == '1' && b1[k] == '1')
                 {
-                    rs[i] = '0';
+                    rs[k] = '0';
                 }
-                else if (rs[i] == '0' && b1[i] == '0')
+                else if (rs[k] == '0' && b1[k] == '0')
                 {
-                    rs[i] = '1';
+                    rs[k] = '1';
                 }
-                else if (rs[i] == '1' && b1[i] == '0')
+                else if (rs[k] == '1' && b1[k] == '0')
                 {
-                    rs[i] = '1';
+                    rs[k] = '1';
                 }
             } 
         }
